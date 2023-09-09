@@ -7,6 +7,9 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --section-title: 22px;
+    --card-title: 16px;
+    --weight-high: 700;
 }
 
 .fa-solid {
