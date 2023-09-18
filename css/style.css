@@ -91,14 +91,28 @@ a {
 
 /*Searchzone*/
 
-.searchzone > h2 {
+.searchzone{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.search-titles{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.search-titles > h2 {
     font-size: var(--section-title);
     font-weight: 700;
 }
 
-.searchzone > p {
+.searchzone-titles > p {
     font-size: var(--card-title);
 }
+
+
 
 .search-form{
     display: flex;
@@ -143,6 +157,42 @@ a {
     border: 1px solid var(--main-color);
     cursor: pointer;
     font-weight: 700;
+}
+
+.search-filter{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.filter-description{
+    font-weight: 700;
+}
+
+.filter-choices{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-button{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 700;
+    gap: 0.8rem;
+    height: 2.5rem;
+    padding: 0.30rem 1rem;
+    border: 2px solid var(--gray-zone);
+    border-radius: 25px;
+    background-color: transparent;
+    font-size: var(--card-title);
+    color: black;
+}
+.filter-button:hover{
+    background-color: var(--filter-bg-color);
 }
 
 .card {
