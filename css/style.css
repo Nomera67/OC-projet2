@@ -195,6 +195,17 @@ a {
     background-color: var(--filter-bg-color);
 }
 
+.search-information{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-information > i {
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+}
+
 .card {
     background-color: white;
     border-radius: 20px;
