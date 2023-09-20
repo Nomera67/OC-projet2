@@ -223,6 +223,23 @@ a {
     font-size: .8rem;
 }
 
+/* Herbergement */
+
+.hebergements{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
+
+.hebergements-cards{
+    width: 250px;
+}
+
+.hebergements-cards > img {
+    
+}
+
 .card {
     background-color: white;
     border-radius: 20px;
