@@ -74,6 +74,12 @@ header{
     place-items: center;
     height: 60px;
     font-size: var(--card-title);
+    border-top: 2px solid transparent;
+}
+
+.header-link:hover{
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
 }
 
 .active{
