@@ -250,12 +250,11 @@ a {
 .hebergements{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1.8rem;
+    gap: 1.5rem;
 }
 
 .hebergements-cards{
-    width: 250px;
+    width: 30%;
     height: 210px;
     padding: 4px;
     overflow: hidden;
@@ -269,23 +268,28 @@ a {
 }
 
 .hebergements-content{
-    padding: 0 15px;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.2rem;
+    height: 70px;
+    padding: 4px 10px;
 }
 
 .hebergements-text{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.1rem;
+}
+
+.hebergements-text > h3, .hebergements-text > p{
+    text-wrap: nowrap;
 }
 
 .cards-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1.8rem;
+    gap: 1.5rem;
 }
 
 .hebergements-img {
@@ -577,6 +581,9 @@ footer{
         padding: 30px 20px;
     }
 
+    .search-input{
+        width: 100%;
+    }
     .research-text{
         display: none;
     }
@@ -593,13 +600,25 @@ footer{
     }
 
     .filter-choices{
-        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 20px;
+        width: 100%;
     }
 
     .filter-button{
-        width: 160px;
+        width: 100%;
         height: 50px;
+        text-wrap: nowrap;
     }
+
+    .economique { grid-area: 1 / 1 / 2 / 2; }
+    .familial { grid-area: 1 / 2 / 2 / 3; }
+    .romantique { grid-area: 2 / 1 / 3 / 2; }
+    .pepites { grid-area: 2 / 2 / 3 / 3; }
+
 
     .cards-container{
         flex-direction: column;
